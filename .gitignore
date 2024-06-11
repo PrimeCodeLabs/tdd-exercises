@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+
+# Output directory
+dist/
+build/
+
+# Jest
+coverage/
+*.snap
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment Variables
+.env
+
+# MacOS
+.DS_Store
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
