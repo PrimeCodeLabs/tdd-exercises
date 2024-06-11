@@ -1,10 +1,10 @@
-import { Currency, currencyExchangeRateMap } from "./exchangeRate";
+import { Currency, exchangeRate } from "./currency";
 
 export class Money {
   constructor(private readonly money: { amount: number; currency: Currency }) {}
 
   getExchangeRates(): any {
-    return currencyExchangeRateMap[this.getCurrency()];
+    return exchangeRate[this.getCurrency()];
   }
 
   multiply(amount2: Money): any {
@@ -30,7 +30,7 @@ export class Money {
   convert(currency: Currency): Money {
     return new Money({
       currency,
-      amount: currencyExchangeRateMap[this.getCurrency()][currency],
+      amount: exchangeRate[this.getCurrency()][currency],
     });
   }
 }
